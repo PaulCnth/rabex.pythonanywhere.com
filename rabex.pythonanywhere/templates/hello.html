@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <h2>hello,
+        {% if not user %}
+            <b>world</b>
+        {% else %}
+            <b>{{ user | capitalize }}</b>
+        {% endif %}
+    </h2>
+</body>
+</html>
